@@ -3,6 +3,9 @@ import subprocess
 
 
 class Module:
+    """Environment Modules
+    Load environmental modules in linux shell.
+    """
     CMD = "/usr/local/Modules/default/bin/modulecmd"
 
     @classmethod
@@ -16,6 +19,9 @@ class Module:
 
 
 class LSF:
+    """Load Sharing Facility
+    Submit distributed jobs to scheduler.
+    """
     @staticmethod
     def bsub(command, shell=False):
         """Submit job on HPC."""
