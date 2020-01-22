@@ -16,6 +16,7 @@ import multiprocessing as mp
 import logging
 import argparse
 import os
+import sys
 from time import time
 from functools import wraps
 
@@ -117,13 +118,6 @@ def vcf_to_fasta(vcf, fasta, lock):
 
     except Exception as e:
         print(e)
-
-
-def verify_matrix(path):
-    headers = []
-    lengths = []
-
-    return len(set(headers)) == len(headers) & len(set(lengths)) == 1
 
 
 @timing
