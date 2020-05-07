@@ -3,8 +3,7 @@ AUTHOR: Sean Beagle
 URL: https://SeanBeagle.github.io
 """
 import argparse
-from Bio import SeqIO
-from Bio import Align
+from Bio import SeqIO, Align
 
 
 _aligner = Align.PairwiseAligner()
